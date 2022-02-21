@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import KefirnotCustomButton from './KefirnotCustomButton/KefirnotCustomButton';
+import AndrewCustomButton from './AndrewCustomButton/AndrewCustomButton';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
         </a>
 
         <KefirnotCustomButton abuze="suka" abuseCount={888}>AZazazaOlolo</KefirnotCustomButton>
+
+        <AndrewCustomButton compliment="pie" complimentCount={13}>Good boy, take a pie</AndrewCustomButton>
 
       </header>
     </div>
