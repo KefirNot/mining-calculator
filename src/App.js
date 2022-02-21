@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import KefirnotCustomButton from './KefirnotCustomButton/KefirnotCustomButton';
+import VerySmartButton from './VerySmartButton/VerySmartButton';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           Learn React
         </a>
 
-        <KefirnotCustomButton abuze="suka" abuseCount={888}>AZazazaOlolo</KefirnotCustomButton>
+        <VerySmartButton>Какой умный кнопка! Ай-ай-ай!</VerySmartButton>
 
       </header>
     </div>
