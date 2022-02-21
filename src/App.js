@@ -19,7 +19,7 @@ function App() {
         >
           Learn React
         </a>
-
+        <KefirnotCustomButton abuze="suka" abuseCount={888}>AZazazaOlolo</KefirnotCustomButton>
         <VerySmartButton>Какой умный кнопка! Ай-ай-ай!</VerySmartButton>
 
       </header>
