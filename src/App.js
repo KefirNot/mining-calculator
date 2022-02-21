@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import KefirchCustomButton from './keficrh-custom-button/kefirch_button';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         >
           Learn React
         </a>
+
+        <KefirchCustomButton abuze="suka" abuzeCount={100}>azaza</KefirchCustomButton>
+
       </header>
     </div>
   );
