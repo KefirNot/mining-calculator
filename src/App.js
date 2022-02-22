@@ -2,7 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 
 import GoodByeButton from './keficrh-custom-button/kefirch_button';
-import KefirnotCustomButton from './KefirnotCustomButton/KefirnotCustomButton';
 
 const userName = 'Колян';
 const goodByeWord = 'Зачем ты сюда зашел, ' + userName + '?';
@@ -23,9 +22,7 @@ function App() {
         >
           Learn React
         </a>
-
-        <KefirnotCustomButton abuze="suka" abuseCount={888}>AZazazaOlolo</KefirnotCustomButton>
-      
+  
         <GoodByeButton goobByeWord={goodByeWord} goodbyeCount={888} margin>Прощай, {userName}</GoodByeButton>
 
       </header>
