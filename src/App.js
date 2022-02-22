@@ -3,7 +3,7 @@ import './App.css';
 
 import GoodByeButton from './keficrh-custom-button/kefirch_button';
 
-const userName = 'Колян';
+const userName = 'дебил';
 const goodByeWord = 'Зачем ты сюда зашел, ' + userName + '?';
 
 function App() {
