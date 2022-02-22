@@ -1,11 +1,14 @@
-export default function KefirchCustomButton({ children, abuze, abuzeCount }) {
+import './kefirch_button.css';
+
+export default function GoodByeButton({ children, goobByeWord, goodbyeCount, margin }) {
     const onClick = () => {
-        for (let i = 0; i <abuzeCount; i++) {
-            console.log(abuze);
+        for (let i = 0; i <goodbyeCount; i++) {
+            console.log(goobByeWord);
             console.log('_______');
         }
 
 
     }
-    return <button onClick={onClick}>{children}</button>;
+    if(margin) return <button className='withMargin' onClick={onClick}>{children}</button>;
+    else return <button onClick={onClick}>{children}</button>;
 }

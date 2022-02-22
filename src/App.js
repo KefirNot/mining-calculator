@@ -1,6 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import KefirchCustomButton from './keficrh-custom-button/kefirch_button';
+
+import GoodByeButton from './keficrh-custom-button/kefirch_button';
+
+const userName = 'дебил';
+const goodByeWord = 'Зачем ты сюда зашел, ' + userName + '?'; 
 
 function App() {
   return (
@@ -19,7 +23,8 @@ function App() {
           Learn React
         </a>
 
-        <KefirchCustomButton abuze="suka" abuzeCount={100}>azaza</KefirchCustomButton>
+
+        <GoodByeButton goobByeWord={goodByeWord} goodbyeCount={888} margin>Прощай, {userName}</GoodByeButton>
 
       </header>
     </div>
