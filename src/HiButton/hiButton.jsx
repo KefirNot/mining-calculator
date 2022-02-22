@@ -1,12 +1,16 @@
-import './hiButtonStyle.css';
+import './HibuttonStyle.css';
+import React from 'react';
 
-function hiButton() {
+function Hibutton() {
     return (
-      <div class="ButtonClick">
-        <button onClick={() => console.log(clickMe)}>
-          Да нажмиии, чего тыыыыы)
+      <div className="ButtonClick">
+        <button onClick={() => {
+          console.log('Goooooooooood MooOOooOooorning, мистер!')
+          console.log(' ')}
+          }>
+          Самая доброжелательная кнопка!
         </button>
       </div>
     );
   }
-  export default hiButton;
+  export default Hibutton;
