@@ -3,11 +3,11 @@ import GetRandomInt from './utils.js';
 
 
 
-export default function VerySmartButton({ children, factMass, smartMass }) {
+export default function VerySmartButton({ children, FACT_MASS, SMART_MASS }) {
     const onClick = () => {
-        console.log(GetRandomInt(factMass));
+        console.log(GetRandomInt(FACT_MASS));
         console.log('-------------------------');
-        console.log(GetRandomInt(smartMass));
+        console.log(GetRandomInt(SMART_MASS));
         console.log('-------------------------');
     }
     return (
