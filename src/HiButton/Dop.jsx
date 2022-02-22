@@ -1,6 +1,6 @@
 
 export default function Random() {
-    var arr = ['Hi', 'Hello', 'Privet', 'Zdorova', 'Good morning', 'ХУЁРНИНГ!', 'Have a good day'];
-    var random = Math.floor(Math.random()* arr.length);
+    const arr = ['Hi', 'Hello', 'Privet', 'Zdorova', 'Good morning', 'ХУЁРНИНГ!', 'Have a good day'];
+    const random = Math.floor(Math.random()* arr.length);
     console.log(arr[random]);
 }

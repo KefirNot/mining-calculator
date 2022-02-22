@@ -6,7 +6,7 @@ function Hibutton() {
     return (
       <div className="ButtonClick">
         <button onClick={() => {
-          console.log(Random())
+          Random()
           console.log(' ')}
           }>
           Самая доброжелательная кнопка!
