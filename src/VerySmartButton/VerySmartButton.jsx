@@ -1,6 +1,8 @@
+import './button_style.css';
+
 export default function VerySmartButton({ children }) {
     const onClick = () => {
-        var facts = ['Ваза для вина - это декантер', 
+        const facts = ['Ваза для вина - это декантер', 
          'Можно умереть если съесть печень белого медведя.', 
          'В эпоху сухого закона в США половина заключенных тюрем приходилось на нарушителей именно этого закона.', 
         'НЕЛЬЗЯ БЫТЬ ПРОСТИТУТКОЙ если тебя зовут Мария и ты живешь в Сиене, Италия', 
@@ -14,17 +16,16 @@ export default function VerySmartButton({ children }) {
         'Некоторые пингвины-самки занимаются проституцией — совершают половой акт в обмен на камешки для строительства дома. Однако иногда они просто обманывают самца, заставляя его думать, что у них будет секс, а затем убегают, как только получают камешек',
         'Муравьи спят 250 раз в день',
         'В Древней Греции женщины считались вывернутыми наизнанку версиями мужчин'];
-        var fact = facts[Math.floor(Math.random() * facts.length)];
-        var iSmart = ['Посмотрите, какая я умная кнопка!', 'Ебать я умная',
+        const fact = facts[Math.floor(Math.random() * facts.length)];
+        const iSmart = ['Посмотрите, какая я умная кнопка!', 'Ебать я умная',
          'Господи, какая же я умная!', 'Друзь-даун по сравнению со мной!'];
-        var smart = iSmart[Math.floor(Math.random() * iSmart.length)];
+        const smart = iSmart[Math.floor(Math.random() * iSmart.length)];
             console.log(fact);
             console.log('-------------------------');
             console.log(smart);
             console.log('-------------------------');
     }
     return (
-        <button style={{backgroundColor: "yellow", width: "600px", 
-        height: "300px", fontSize: "70px"}} onClick={onClick}>{children}</button>
+        <button className='smart-button' onClick={onClick}>{children}</button>
     )
 }
