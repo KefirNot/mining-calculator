@@ -3,7 +3,7 @@ import './App.css';
 import KefirnotCustomButton from './KefirnotCustomButton/KefirnotCustomButton';
 import AndrewCustomButton from './AndrewCustomButton/AndrewCustomButton';
 import VerySmartButton from './VerySmartButton/VerySmartButton';
-import GoodByeButton from './keficrh-custom-button/kefirch_button';
+import GoodByeButton from './goodbyeButton/GoodByeButton';
 
 const FACTS = [
   'Ваза для вина - это декантер',
@@ -28,7 +28,7 @@ const SMART_FACTS = [
 ];
 
 
-const userName = 'дебил';
+const userName = 'братуха';
 const goodByeWord = 'Зачем ты сюда зашел, ' + userName + '?';
 
 function App() {
