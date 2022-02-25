@@ -1,0 +1,61 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.social a {
+  text-align: center;
+  width: 90px;
+  height: 90px;
+  float: left;
+  margin: 0 10px 10px 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  color: white;
+  position: absolute;
+  top: 15%;
+  left: 46%; 
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.70);
+}
+
+.instagram a:hover {
+  background-color: #d6249f;
+  background-color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  background: black;
+  transition: 3s;
+}
+
+.ButtonClick {
+  height: 100%;
+}
+
+button {
+  position: absolute;
+  top: 40%;
+  left: 41.7%;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  border-radius: 20px;
+  border: 1px solid #ccc;;
+  height: 100px;
+  width: 250px;
+  font-size: 50px;
+  font-family: cursive;
+  box-shadow: 0px 3px 10px rgba(0,0,0,.70);
+  color: white;
+}
+   
+button:hover {
+  color: rgb(0, 0, 0);
+  transition: 500ms;
+}
+
+body {
+  height: 99%;
+  margin: 0;
+}
+
+p.slova {
+  text-align: center;
+  margin: 30px auto;
+  font-size: 20px;
+}
