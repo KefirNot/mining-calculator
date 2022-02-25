@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import KefirnotCustomButton from './KefirnotCustomButton/KefirnotCustomButton';
+import AndrewCustomButton from './AndrewCustomButton/AndrewCustomButton';
 import VerySmartButton from './VerySmartButton/VerySmartButton';
+import GoodByeButton from './keficrh-custom-button/kefirch_button';
 
 const FACTS = [
   'Ваза для вина - это декантер',
@@ -25,7 +27,6 @@ const SMART_FACTS = [
   'Господи, какая же я умная!', 'Друзь-даун по сравнению со мной!'
 ];
 
-import GoodByeButton from './keficrh-custom-button/kefirch_button';
 
 const userName = 'дебил';
 const goodByeWord = 'Зачем ты сюда зашел, ' + userName + '?';
@@ -50,6 +51,8 @@ function App() {
         <KefirnotCustomButton abuze="suka" abuseCount={888}>AZazazaOlolo</KefirnotCustomButton>
         <VerySmartButton factArray={FACTS} smartArray={SMART_FACTS}>Какой умный кнопка! Ай-ай-ай!</VerySmartButton>
 
+
+        <AndrewCustomButton compliment="pie" complimentCount={13}>Good boy, take a pie</AndrewCustomButton>
 
       </header>
     </div>
