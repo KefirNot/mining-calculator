@@ -4,6 +4,7 @@ import KefirnotCustomButton from './KefirnotCustomButton/KefirnotCustomButton';
 import AndrewCustomButton from './AndrewCustomButton/AndrewCustomButton';
 import VerySmartButton from './VerySmartButton/VerySmartButton';
 import GoodByeButton from './goodbyeButton/GoodByeButton';
+import getRandomInt from './VerySmartButton/utils';
 
 const FACTS = [
   'Ваза для вина - это декантер',
@@ -27,9 +28,19 @@ const SMART_FACTS = [
   'Господи, какая же я умная!', 'Друзь-даун по сравнению со мной!'
 ];
 
+const NAMES = [
+  'Макс',
+  'Саня',
+  'Виталя',
+  'Леха',
+  'Андрей',
+  'Дебил',
+  'Братуха',
+  'userName',
+]
 
-const userName = 'братуха';
-const goodByeWord = 'Зачем ты сюда зашел, ' + userName + '?';
+const choosenUser = NAMES[getRandomInt(0, NAMES.length-1)];
+const goodByeWord = 'Зачем ты сюда зашел, ' + choosenUser + '?';
 
 function App() {
   return (
@@ -47,7 +58,7 @@ function App() {
         >
           Learn React
         </a>  
-        <GoodByeButton goobByeWord={goodByeWord} goodbyeCount={888} margin>Прощай, {userName}</GoodByeButton>
+        <GoodByeButton goobByeWord={goodByeWord} goodbyeCount={888} margin>Прощай, {choosenUser}</GoodByeButton>
         <KefirnotCustomButton abuze="suka" abuseCount={888}>AZazazaOlolo</KefirnotCustomButton>
         <VerySmartButton factArray={FACTS} smartArray={SMART_FACTS}>Какой умный кнопка! Ай-ай-ай!</VerySmartButton>
 
