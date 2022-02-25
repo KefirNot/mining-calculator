@@ -29,14 +29,8 @@ const SMART_FACTS = [
 ];
 
 const NAMES = [
-  'Макс',
-  'Саня',
-  'Виталя',
-  'Леха',
-  'Андрей',
-  'Дебил',
-  'Братуха',
-  'userName',
+  'Макс', 'Саня', 'Виталя', 'Леха', 
+  'Андрей', 'Дебил', 'Братуха', 'userName',
 ]
 
 const choosenUser = NAMES[getRandomInt(0, NAMES.length-1)];
