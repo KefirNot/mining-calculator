@@ -1,3 +1,3 @@
-export default function GetRandomInt (massive) {
+export default function getRandomInt (massive) {
     return massive[Math.floor(Math.random() * massive.length)];
 }
