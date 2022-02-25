@@ -25,6 +25,11 @@ const SMART_FACTS = [
   'Господи, какая же я умная!', 'Друзь-даун по сравнению со мной!'
 ];
 
+import GoodByeButton from './keficrh-custom-button/kefirch_button';
+
+const userName = 'дебил';
+const goodByeWord = 'Зачем ты сюда зашел, ' + userName + '?';
+
 function App() {
   return (
     <div className="App">
@@ -40,9 +45,11 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a>  
+        <GoodByeButton goobByeWord={goodByeWord} goodbyeCount={888} margin>Прощай, {userName}</GoodByeButton>
         <KefirnotCustomButton abuze="suka" abuseCount={888}>AZazazaOlolo</KefirnotCustomButton>
         <VerySmartButton factArray={FACTS} smartArray={SMART_FACTS}>Какой умный кнопка! Ай-ай-ай!</VerySmartButton>
+
 
       </header>
     </div>
