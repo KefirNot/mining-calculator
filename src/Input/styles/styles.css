@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;  
+}
+
+.body {
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+
+.input {
+    padding: 5%;
+    font-family: Polymer-1.3;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 68px;
+    line-height: 68px;
+    color: #F3F0E8;
+    
+}
+
+.int {
+    position: absolute;
+    left: 6.5%;
+    right: 18.85%;
+    top: 33.7%;
+    border: 2px solid #707070;
+    box-sizing: border-box;
+    border-radius: 144px;
+    font-size: 32px;
+    background-color: #0000;
+    color: #F3F0E8;
+    padding: 15px;
+}
