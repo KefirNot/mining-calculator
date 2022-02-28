@@ -1,13 +1,11 @@
 import React from 'react';
-import './App.css';
-import Hibutton from './HiButton/Hi_button';
+import './Input/styles/styles.css';
+import Components from './Input/components/Components';
 
 
 function App() {
   return (
-    <Hibutton>
-      <button></button>
-    </Hibutton>
+    <Components/>
   );
 }
 
