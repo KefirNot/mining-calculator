@@ -1,0 +1,198 @@
+названия переменных:
+    PascalCase для типов и классов
+    DB_PASS SMART_FACTS значения, которые известны до запуска или не меняются
+    camelCase - все остальное
+
+переменные:
+
+js - динамическая типизация
+
+let - можно присваивать новые значения
+const - значение присваивается при обьявлении, позже не меняется никак
+var - лучше не юзать, хз. 
+
+примитивные типы переменных:
+    string(строка) 
+    boolean - логический, true или false
+    number - число(0, -5, 10)
+    null - используется при указании того, что у переменной сейчас нет значения
+    undefined - неопределено, нет значения
+    symbol - символ, хз
+
+ссылочный тип 
+    object - обьект(набор свойств, состоит из ключа и значения).  не может быть неизменяемым.
+    переменная при присвоении обьекта хранит только ссылку. при копировании переменной копируется только ссылка
+
+стрелочный синтаксис
+const a = () => {
+    //код
+}
+ a уже не поменяешь
+
+
+ обьекты 
+    свойство, которое содержит функцию как значение - метод. 
+    const a = {
+        'func':function func() {console.log('some data');},
+        'data':'123'
+
+    }
+
+    a.func() => some data в консоли
+    a.data => возвращает 123
+
+const myCity = {
+city: 'Novokuznetsk',
+popular: false,
+country: 'Russia'
+}
+Порядок присваивания свойств не важен
+
+обращение - myCity.city => 'Novokuznetsk'
+
+
+JSON
+порядок записи - {
+    "city":"nsk", 
+    "country":"russia"
+}
+JSON.parse(); возвращает обьект
+JSON.stringify для обьектов
+
+Мутации в javascript
+    const person = {
+        name:'bob',
+        age:25
+    }
+    const person2 = person копирование ссылки, copy by reference
+    
+    person2.age = 26 мутация обьекта, на который ссылается person2.
+    person2.isAdult = true
+
+    console.log(person.age) => 26 и эта мутация отразилась на оригинале
+    console.log(person.isAdult) => true
+    
+Как избежать мутаций
+вариант 1:
+    const person = {
+        name:'bob',
+        age:25
+    }
+
+    const person2 = Object.assign({}, person)
+    НО!!!! если у оригинала есть вложенные обьекты, то они останутся старой ссылкой
+
+    person2.age = 26
+
+    console.log(person.age) => 25
+    console.log(person2.age) => 26
+
+вариант 2:
+    const person = {
+        name:'bob',
+        age:25
+    }
+
+    const person2 = { ...person} оператор разделения обьекта на свойства, та же шляпа 
+    как и с assign
+
+    person2.name = 'Alice'
+
+    console.log(person.name) => bob 
+    console.log(person2.name) => Alice
+
+вариант 3:
+    const person = {
+        name:'bob',
+        age:25
+    }
+    
+    const person2 = JSON.parse(JSON.stringify(person))
+    ссылки не сохраняются, обьект полностью новый
+
+    person2.name = 'Alice'
+
+    console.log(person.name) => bob
+    console.log(person2.name) => alice
+
+функции
+функция - блок кода, который можно повторять много раз
+
+function myFn(a,b) {
+    let a 
+    a = a + 1
+    c = a + b
+    return c
+}
+
+если у функции нет return то она возвращает undefined
+
+аргументы функции - то что при вызове
+параметры функции - то что в скобках при обьявлении ф-ции
+
+передача значения по ссылке
+
+const personOne = {
+        name:'bob',
+        age:21
+    }
+
+function increasePersonAge(person) {
+    person.age += 1
+    return person
+}
+
+increasePersonAge(personOne)
+console.log(personOne.age) => 22
+
+внутри функции не рекомендуется мутировать переданные(внешние) обьекты
+лучше внутри функции копировать переданный обьект и мутировать и возвращать его
+
+const personOne = {
+        name:'bob',
+        age:21
+    }
+
+function increasePersonAge(person) {
+    const updatedPerson = Object.assign({}, person)
+    updatedPerson.age += 1
+    return updatedPerson
+}
+
+const updatedPersonOne = increasePersonAge(personOne)
+
+console.log(personOne.age) => 21
+console.log(updatedPersonOne.age) => 22
+
+callback функции
+
+function someFunc() {
+    //sth
+}
+
+function funcWcallback(callbackFunction) {
+    //smth
+    callbackFunction()
+}
+
+funcWcallback(someFunc)
+
+реальный пример
+
+function printMyName() { калбек функция
+    console.log('Max')
+}
+
+setTimeout(printMyName, 1000)
+
+
+области видимости
+
+
+
+
+
+
+
+
+
